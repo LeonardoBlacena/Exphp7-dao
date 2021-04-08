@@ -29,15 +29,22 @@ $aluno->setDessenha("@luno");
 $aluno->insert();
 echo $aluno;*/
 
-$usuario = new Usuario();
+//Alterar um usuario
+/*$usuario = new Usuario();
 
 $usuario->loadById(8);
-
 $usuario->update("professor", "A@#!$$");
+echo $usuario;*/
+
+
+//Deletar usuario
+$usuario = new Usuario();
+
+$usuario->loadById(4);
+
+$usuario->delete();
 
 echo $usuario;
-
-
 
 
 
