@@ -16,9 +16,19 @@ echo $root;*/
 echo json_encode($search);*/
 
 //Carrega um usuario usando o login e a senha
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->login("joao","124");
 
-echo $usuario;
+echo $usuario;*/
+
+$aluno = new Usuario("aluno","@luno");
+
+/*$aluno->setDeslogin("aluno");
+$aluno->setDessenha("@luno");*/
+
+$aluno->insert();
+
+echo $aluno;
+
 
 ?>
