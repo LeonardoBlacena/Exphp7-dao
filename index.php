@@ -23,12 +23,23 @@ echo $usuario;*/
 
 $aluno = new Usuario("aluno","@luno");
 
+//Criando um novo usuario
 /*$aluno->setDeslogin("aluno");
-$aluno->setDessenha("@luno");*/
-
+$aluno->setDessenha("@luno");
 $aluno->insert();
+echo $aluno;*/
 
-echo $aluno;
+$usuario = new Usuario();
+
+$usuario->loadById(8);
+
+$usuario->update("professor", "A@#!$$");
+
+echo $usuario;
+
+
+
+
 
 
 ?>
